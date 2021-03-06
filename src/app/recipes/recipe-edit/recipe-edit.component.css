@@ -1,0 +1,5 @@
+/* targets classes that are invalid and has been touched to display red border */
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
