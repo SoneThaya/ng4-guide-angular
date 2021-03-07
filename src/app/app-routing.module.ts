@@ -1,3 +1,4 @@
+import { AuthComponent } from './auth/auth.component';
 import { RecipesResolverService } from './recipes/recipes-resolver.service';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipesComponent } from './recipes/recipes.component';
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
     ],
   },
   { path: 'shopping-list', component: ShoppingListComponent },
+  { path: 'auth', component: AuthComponent },
 ];
 
 @NgModule({
