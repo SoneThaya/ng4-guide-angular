@@ -8,6 +8,7 @@
 /bazel-out
 
 /secret
+/src/environments/
 
 # dependencies
 /node_modules
