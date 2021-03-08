@@ -9,10 +9,8 @@ import { NgModule } from '@angular/core';
   declarations: [ShoppingListComponent, ShoppingEditComponent],
   imports: [
     FormsModule,
-    RouterModule.forChild([
-      { path: 'shopping-list', component: ShoppingListComponent },
-    ]),
-    SharedModule
+    RouterModule.forChild([{ path: '', component: ShoppingListComponent }]),
+    SharedModule,
   ],
 })
 export class ShoppingListModule {}
