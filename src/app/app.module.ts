@@ -1,3 +1,4 @@
+import { LoggingService } from './logging.service';
 import { CoreModule } from './core.module';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,5 +18,6 @@ import { HeaderComponent } from './header/header.component';
     CoreModule,
   ],
   bootstrap: [AppComponent],
+  // providers: [LoggingService],
 })
 export class AppModule {}
