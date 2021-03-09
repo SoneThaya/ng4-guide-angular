@@ -1,3 +1,5 @@
+import { environment } from './../environments/environment.prod';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreModule } from '@ngrx/store';
 import { CoreModule } from './core.module';
 import { SharedModule } from './shared/shared.module';
@@ -15,6 +17,10 @@ import { shoppingListReducer } from './shopping-list/store/shopping-list.reducer
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot({ shoppingList: shoppingListReducer }),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25,
+      logOnly: environment.production,
+    }),
     HttpClientModule,
     SharedModule,
     CoreModule,
