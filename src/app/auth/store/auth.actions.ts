@@ -20,8 +20,6 @@ export class Login implements Action {
 
 export class Logout implements Action {
   readonly type = LOGOUT;
-
-  constructor() {}
 }
 
 export class LoginStart implements Action {
