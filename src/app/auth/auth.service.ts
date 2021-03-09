@@ -1,6 +1,5 @@
 import { environment } from './../../environments/environment';
 import { Router } from '@angular/router';
-import { secret } from './../../../secret/secret';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { catchError, tap } from 'rxjs/operators';
