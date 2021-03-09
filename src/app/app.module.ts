@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import * as fromApp from './store/app.reducer';
+import { StoreRouterConnectingModule } from '@ngrx/router-store';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -24,6 +25,7 @@ import * as fromApp from './store/app.reducer';
       maxAge: 25,
       logOnly: environment.production,
     }),
+    StoreRouterConnectingModule.forRoot(),
     HttpClientModule,
     SharedModule,
     CoreModule,
