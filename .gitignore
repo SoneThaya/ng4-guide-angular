@@ -10,6 +10,7 @@
 /secret
 **/src/environments/environment.prod.ts
 **/src/environments/environment.ts
+/src/environments
 
 # dependencies
 /node_modules
